@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "astraeconomy",
+	"version": "${version}",
+	"name": "AstraEconomy",
+	"description": "This is an Economy Mod made by Astralex44.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Astralex44/AstraEconomy"
+	},
+	"license": "MIT",
+	"icon": "assets/astraeconomy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.astralex44.astraeconomy.AstraEconomy"
+		],
+        "client": [
+            "net.astralex44.astraeconomy.AstraEconomyClient"
+        ],
+		"fabric-datagen": [
+			"net.astralex44.astraeconomy.AstraEconomyDataGenerator"
+		]
+	},
+	"mixins": [
+		"astraeconomy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
